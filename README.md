@@ -15,7 +15,7 @@
 1. **IL1.1.- Crea contenido web incorporando estructura y etiquetado de la versión actual de HTML, incorporando elementos de estilo**
 **de diseño en el sitio web usando versión actual de CSS.**
     - IE1.1.1
-        - [ ] La estructura HTML incluye <header>,<nav>, <main>, <section>, <article>,<footer>.
+        - [ ] La estructura HTML incluye ```<header>,<nav>, <main>, <section>, <article>,<footer>```
         - [ ] El etiquetado sigue las prácticas actuales de HTML5.
     - IE1.1.2
         - [ ] Los hipervínculos son funcionales y navegan correctamente.
@@ -25,7 +25,7 @@
         - [ ] Los formularios son interactivos y funcionales.
         - [ ] El footer contiene la información adecuada.
     - IE1.1.3
-        - [ ]Las páginas están interconectadas mediante hipervínculos coherentes
+        - [ ] Las páginas están interconectadas mediante hipervínculos coherentes
     - IE1.1.4
         - [ ] Se utiliza una hoja de estilos CSS externa para todas las páginas.
         - [ ] La hoja de estilos aplica de manera consistente
