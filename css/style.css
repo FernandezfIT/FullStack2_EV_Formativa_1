@@ -1,6 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 #encabezado {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    color:white;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
 }
 
@@ -13,17 +20,29 @@
 }
 
 #texto_blanco { 
+    position: relative;
+    align-items: center;
+    justify-content: center;
     color: white;
 }
 
 .logo {
-    width: 350px;
+    width: 550px;
     height: auto;
 }
 
 #posicion_2 {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 2rem;
     position: relative;
     z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 #navBar_posicion2 {
@@ -54,6 +73,7 @@
     position: fixed;
     inset: 0;
     width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: 0;
 }
