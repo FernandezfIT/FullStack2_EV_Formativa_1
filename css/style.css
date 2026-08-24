@@ -3,7 +3,14 @@
 }
 
 .nav-link:hover{
-    background-color: rgba(23, 201, 0, 0.45);
+    background-color: rgba(0, 100, 0, 0.5);
+    color: #beebc0;
+}
+
+
+.nav-link{
+    
+    transition: 0.2s;
 }
 
 #encabezado {
@@ -48,13 +55,10 @@
 }
 
 #navBar_posicion2 {    
-    background-color: rgba(0, 150, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.300);
     border-color: darkgreen;
-    border-top-style: solid;
-    border-right-style: dashed;
-    border-bottom-style: solid;
-    border-left-style: dashed;
-    border-width: 4px;
+    border-style: solid;
+    border-width: 1px;
     width: 90%;
     max-width: 1200px;
     margin: auto;
