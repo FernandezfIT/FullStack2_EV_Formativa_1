@@ -1,68 +1,183 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">>
-        <title>VaporElectronics</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/home/fernandezf-it/Escritorio/FullStack2/repo/EV_Formativa_1/style.css"> <!--Ruta css local-->
-        <link href=
-            "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-            rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-            crossorigin="anonymous"> <!--LINK CDN  css BOOTSTRAP-->
-        <script src=
-            "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
-            crossorigin="anonymous"></script> <!--LINK CSS BOOTSTRAP-->
-        <script></script> <!--Falta la ruta del javascript para el formulario y la despuesta a errores-->
-    </head>
-    <body>
-        <header id="encabezado">
-            <h1>VaporElectronics, Los Teclados más cool</h1>
-        </header> <!--Header de la pág-->
+<html lang="es">
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Menú</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nuestros Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Otros
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Contactanos</a></li>
-                                <li><a class="dropdown-item" href="#">Legal</a></li>
-                                <li><a class="dropdown-item" href="#">Ya no sé me ocurre</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaporElectronics</title>
+    <meta name="description" content="">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="css/style.css"> <!--Ruta css local, se modifica para que funcione en cualquier SO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--LINK CDN  css BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script> <!--LINK CSS BOOTSTRAP-->
+    <script src="js/funciones.js"></script>
+    <!--Falta la ruta del javascript para el formulario y la despuesta a errores-->
+</head>
+
+<body>
+    <video class="video_fondo" autoplay muted loop playsinline>
+        <source src="video/vaporWaveLoop.mp4" type="video/mp4">
+    </video>
+    <header id="encabezado">
+        <img src="img/VaporElectronicsLogo.svg" alt="VaporElectronics" class="logo">
+        <h1 class="logo2">Lo mejor en teclados mecanicos</h1>
+    </header> <!--Header de la pág-->
+    <nav id="navBar_posicion2" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nuestros Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Otros
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Contactanos</a></li>
+                            <li><a class="dropdown-item" href="#">Legal</a></li>
+                            <li><a class="dropdown-item" href="#">Ya no sé me ocurre</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><!--Barra de navegación, muestra las secciones de la pag-->
+
+    <main id="posicion_2"> <!--Cuerpo Principal de la página, contiene el resto de elementos-->
+        <section>
+            <p id="texto_blanco" >
+                En VaporElectronics somos apasionados por los teclados mecánicos y por la experiencia única que
+                ofrecen al escribir, jugar o trabajar. Nuestra tienda reúne una cuidada selección de teclados,
+                switches, keycaps y accesorios pensados tanto para quienes están descubriendo este mundo como para
+                los entusiastas que buscan personalizar cada detalle de su setup. Contamos con distintas
+                configuraciones, tamaños y tipos de interruptores para adaptarnos a diferentes estilos y
+                necesidades, combinando rendimiento, comodidad y diseño. Nuestro objetivo es que cada persona pueda
+                encontrar un teclado que no solo funcione bien, sino que también refleje su personalidad y
+                transforme su escritorio en un espacio propio.
+            </p>
+        </section> <!--Parrafo de texto antes de las imagenes de los productos"-->
+        <section>
+            <article>
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/teclado_1.jpg" class="d-block w-50" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Teclado Mecánico AJAZZ AK980 V2</h5>
+                                <p>98% Inglés US Gift Switch V2 Tri-Mode RGB Purple/White/Blue.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/teclado_2.jpg" class="d-block w-50" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Teclado Mecánico AJAZZ AK980 V2</h5>
+                                <p>98% Inglés (US) Maillard Switch Tri-Mode RGB Black/Grey/Yellow.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/teclado_3.jpg" class="d-block w-50" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Teclado Mecánico AJAZZ AK650</h5>
+                                <p>Black/Grey/Yellow 65% Dream Weaving Switch Tri-Mode RGB.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/teclado_4.jpg" class="d-block w-50" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Teclado Mecánico AJAZZ AK650</h5>
+                                <p>White/Blue/purple 65% Dream Weaving Switch Tri-Mode RGB.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/teclado_5.jpg" class="d-block w-50" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Teclado Magnético IROK Mars75 Pro</h5>
+                                <p>75% Hall Effect 8000Hz RT 0.001mm ARGB Blanco.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/teclado_6.jpg" class="d-block w-50" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Teclado gamer Inalámbrico magnético irok mars68</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+        </section>
+        <section> <!--FORMULARIO-->
+            <h1>
+                Contactanos
+            </h1>
+            <div class="container">
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Email address</label>
+                    <input type="email" class="form-control formulario" id="correo" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Phone number</label>
+                    <input type="email" class="form-control formulario" id="telefono" placeholder="56912345678">
+                </div>
+                <div class="mb-3">
+                    <label for="textArea1" class="form-label">Cuentanos de ti</label>
+                    <textarea class="form-control formulario" id="textArea1" rows="3"></textarea>
                 </div>
             </div>
-        </nav><!--Barra de navegación, muestra las secciones de la pag-->
+            <div class="container">
+                <button type="button" class="btn btn-primary" onclick="checkear_formulario()">Enviar</button>
+            </div>
+        </section>
+    </main>
+    <footer id="piedepagina">
+        <ul>
+            <li>VaporElectronics | Todos los derechos reservados</li>
+            <li>Santiago de Chile</li>
+            <li> Diseñado por Felipe Fernández</li>
+        </ul>
+    </footer>
+</body>
 
-        <main> <!--Cuerpo Principal de la página, contiene el resto de elementos-->
-            <section></section> <!--Agregar "Logo", "Título", "Buscador"-->
-
-        </main>
-        <footer></footer>
-        
-        <script src="" async defer></script>
-    </body>
 </html>

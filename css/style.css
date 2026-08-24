@@ -1,0 +1,69 @@
+#encabezado {
+    position: relative;
+    color:white;
+    z-index: 2;
+}
+
+
+
+#piedepagina { 
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+#texto_blanco { 
+    color: white;
+}
+
+.logo {
+    width: 350px;
+    height: auto;
+}
+
+#posicion_2 {
+    position: relative;
+    z-index: 2;
+}
+
+#navBar_posicion2 {
+    position: relative;
+    z-index: 2;
+}
+
+
+.logo2 {
+    font-family: "Audiowide", sans-serif;
+
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    color: #00eaff;
+
+    text-shadow:
+        2px 2px 0 #ff00b7,
+        4px 4px 0 #7700ff,
+        0 0 10px #00eaff,
+        0 0 25px #ff00b7;
+}
+
+
+
+.video_fondo {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+body::before {
+    content: ""; /*Solo para asegurarse que el elemento exista*/
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none; /*Para que no se le puede hacer clic*/
+}
+
